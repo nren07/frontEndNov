@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Chapter</title>
+</head>
+<body>
+    <!-- Non sementic Representation of table  -->
+    <!-- tr is used to create a new row  -->
+    <!-- th is used to represent header  -->
+    <!-- td is used for table data entry -->
+    <table border="1">
+        <caption>Bill</caption>
+        <tr>
+            <th>S.No</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>2</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td colspan="2"><center>total</center></td>
+            <td>3000</td>
+        </tr>
+    </table>
+
+    <!-- Simentic representation of table  -->
+    <!-- thead wrap up head data  -->
+    <!-- tbody wrap up table body data -->
+    <!-- tfoot wrap up table footer data -->
+    <table border="1">
+        <caption>Bill</caption>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><center>total</center></td>
+                <td>3000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

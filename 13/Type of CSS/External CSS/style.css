@@ -1,0 +1,18 @@
+/* style to id part is done by using #  */
+#example1 {
+  color: red;
+  background-color: black;
+}
+#example2 {
+  color: white;
+  background-color: black;
+}
+/* normal tag style done simple format */
+h2 {
+  color: pink;
+  background-color: purple;
+}
+p {
+  color: brown;
+  background-color: yellow;
+}

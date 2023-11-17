@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lacture</title>
+</head>
+<body>
+    <!-- Html forms provides a way to collect user input an a web page .
+    Forms are essential for various interaction features, such as submitting data,
+     user authentication and conducting survays.
+    They allow users to enter data into input field .select options and interacts with buttons -->
+    <!-- get and post are two different type of method that is used to request data to backend
+    get-- is used when non sensitive information required and post is used to get sensitive information  -->
+    <form action="/getuser" method="get">
+        <!-- input tag is used to create a input field in form -->
+        <input type="text" placeholder="First Name" name="f_name" id="firstName">
+        <input type="number" placeholder="Mobile number">
+        <input type="password" placeholder="password">
+        <input type="email" placeholder="Email">
+        <br>    
+        <input type="date">
+        <input type="color">
+        <input type="range" min="10" max="100">
+        <input type="url" placeholder="www.xyz.com">
+        <!-- Radio button -->
+        <br>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">FeMale
+        <br>
+        <input type="checkbox">1st Choice
+        <input type="checkbox">2st Choice
+        <input type="checkbox">3st Choice
+        <input type="checkbox">4st Choice
+        <br>
+        <input type="submit">
+        <input type="reset">
+        <!-- value attribute is used whenever developer wants to put value of any type of input 
+        then it is used like text field input value provided by user so value attribute is not used
+        but in case button we use value attribute  -->
+        <input type="button" value="Login">
+        <input type="button" value="Hello">
+        <!--Another Example of value attributes usecase   -->
+        <!-- dropdown -->
+        <!-- in dropdown we select any one option and only that option value send to backend when 
+            submit button in action  -->
+        <select>
+            <option value="Audi">A</option>
+            <option value="Mahindra">B</option>
+            <option value="Tata">C</option>
+        </select>
+
+        <!-- Allow to user multiple line text -->
+        <!-- attributes row and cols -->
+        <textarea rows="4" cols="50" placeholder="Write your comment here"></textarea>
+
+        <!-- Another way to create button  -->
+        <button type="login">Login</button>
+    </form>
+    <hr>
+    <br>
+
+    <form action="/getuser" method="get">
+       <!-- id is just a additional information  -->
+       <!-- Lable is used to represent input field naming or it is connected by input by using for attribute
+            hover over lable hightlight input field and when click action happen on lable input field active -->
+        <label for="f_name">First Name</label>
+        <!-- required attribute is used where field can not be empty -->
+        <input type="text" placeholder="First Name" name="f_name" id="firstName" required>
+        <label for="number">Mobile Number</label>
+        <input type="number" placeholder="Mobile number" id="number" name="mob_number" required>
+        <label for="pass">Password</label>
+        <input type="password" placeholder="password" id="pass" name="password" required>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email" name="email" required>
+        <br>    
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" name="dob" required>
+        <label for="color">Color Select</label>
+        <input type="color"id="color" name="color">
+        <label for="range">Select Range</label>
+        <input type="range" min="10" max="100" id="range" name="range">
+        <label for="url">Website</label>
+        <input type="url" placeholder="www.xyz.com" id="url" name="url" required>
+        <!-- Radio button -->
+        <br>
+        <br>
+        <label >Gender</label>
+        <!-- name attribute to declaire variable name if input type so variable can store one 
+        value at a time and we can clearly understand name attribute in gender attribute  -->
+        <input type="radio" name="gender" id="male" required>
+        <label for="male">Male</label>
+        
+        <input type="radio" name="gender" id="female" required>
+        <label for="female">FeMale</label>
+        <br>
+        <br>
+        <label >Favirote Fruit</label>
+        <br>
+        <input type="checkbox" id="1" name="or">
+        <label for="1">Orange</label>
+        <input type="checkbox" id="2" name="ba">
+        <label for="2">Banana</label>
+        <input type="checkbox" id="3" name="pa">
+        <label for="3">Papaya</label>
+        <input type="checkbox" id="4" name="ap">
+        <label for="4">Apple</label>
+        <br>
+        <br>
+
+        <!-- Allow to user multiple line text -->
+        <!-- attributes row and cols -->
+        <textarea rows="4" cols="50" placeholder="Write your comment here" name="comment"></textarea>
+        <br>
+        <br>
+        <!-- value attribute is used whenever developer wants to put value of any type of input 
+        then it is used like text field input value provided by user so value attribute is not used
+        but in case button we use value attribute  -->
+        
+        <select >
+            <option value="Audi">Audi</option>
+            <option value="Mahindra">Mahindra</option>
+            <option value="Tata"></option>
+        </select>
+        <input type="submit">
+        <input type="reset">
+        <!-- Another way to create button  -->
+        <input type="button" value="Login">
+        <input type="button" value="Hello">
+        <!--Another Example of value attributes usecase   -->
+        <!-- dropdown -->
+        <!-- in dropdown we select any one option and only that option value send to backend when 
+            submit button in action  -->
+       
+        
+        
+        
+
+        
+        
+    </form>
+</body>
+</html>

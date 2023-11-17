@@ -1,0 +1,61 @@
+/* universal selector */
+/* universal selector is used for whole element styling and it can be done by using  star(*) */
+*{
+    /* biggest use of this selector to provide margin and padding and dedicated font family */
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    /* background-color: black; */
+}
+
+/* Type selector / Tag selector */
+h2{
+    color: blue;
+}
+
+/* id selector  */
+/*  it is used when we need to style unique element */
+#eg1{
+    color: yellow;
+}
+
+/* class selector {class may not be unique} */
+.abc{
+    color: pink;
+}
+.xyz{
+    font-size: 20px;
+}
+
+/* combinator selector */
+/* in combinator selector there are two type  *
+    1. decendent 
+    2. child /
+/* Decendent-- all level childeren of root are decendent of root */
+/* child-- diret child of root or level 1 nodes are the direct child of level 0 */
+
+
+/* child combinator selector  */
+/* parent > all child  */
+ /*
+  .eg2>p{
+
+    }
+  */
+  #eg2>div>p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+  }
+
+  #eg2 p{
+    background-color: blue;
+  }
+
+
+  /* Decendent combinator selecor
+    parent h1{
+
+    }
+    all   h1 decendent of parent is styled and parent and decendent sepereated by space
+     */
