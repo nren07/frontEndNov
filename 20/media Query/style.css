@@ -1,0 +1,36 @@
+#box{
+    width:300px;
+    height:300px;
+    background-color: red;
+}
+/* 1. media feature :width 
+    a. minwidth
+    b. maxwidth
+    c. width*/
+
+/* @media screen and (min-width:600px){
+<-- width should be atleast or above 500px-->
+    #box{
+        background-color: yellow;
+    }
+} 
+*/
+
+/* @media screen and (max-width:600px) {
+/* width not more then 600px upto 600px that is applied */
+    /* #box{
+        background-color: blue;
+    }
+    
+} */
+
+/* @media screen and (width:600px) {
+/* width excatly 600px 
+     #box{
+        background-color: blue;
+    }
+    
+} */
+
+
+/* same thing happning with height */

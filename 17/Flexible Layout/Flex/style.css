@@ -1,0 +1,30 @@
+#parent{
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box{
+    width:200px;
+    height:200px;
+    border: 2px solid black;
+}
+
+.green{
+    background-color: green;
+    height:40px;
+}
+
+.red{
+    background-color: red;
+    height:70px;
+}
+.blue{
+    background-color: blue;
+    height:100px;
+}
+.yellow{
+    background-color: yellow;
+}

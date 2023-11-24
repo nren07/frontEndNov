@@ -1,0 +1,63 @@
+#my-container{
+  width:50%;
+  height:500px;
+  background-color: pink;
+  display:grid;
+
+  /* absolute columns */
+  /* grid-template-columns: 100px 100px 100px;
+  defines  3 columns 100px each */
+
+  /* fraction columns */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+ /* defines 3 columns in terms of ratio or fraction */
+
+    /* percentage */
+    /* grid-template-columns: 10% 20% 30%; */
+    /* in this case total 60% covered and rest portion remain empty */
+
+    /* auto */
+    /* grid-template-columns: 100px 100px auto; */
+    /* in this case remaining portion covered in auto */
+
+    /* mixed  */
+    /* grid-template-columns: 100px 10% 2fr 3fr; */
+
+    /* if we want to create a number of columns then above given way is hactik or not suitable 
+     thats why we use repeat(times,size)*/
+    /* grid-template-columns: repeat(12,50px); */
+
+    /* minmax */
+    /* grid-template-columns: minmax(100px,1fr) 100px 1fr; */
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+    "redddd redddd green green blue yellow"
+    "redddd redddd green green blue yellow"
+    "redddd redddd green green blue yellow"
+    "redddd redddd green green blue yellow"
+    "redddd redddd green green blue yellow"
+    "redddd redddd green green blue yellow";
+}
+
+.red {
+  background-color: red;
+  grid-area:redddd;  
+}
+.green {
+  background-color: green;
+  grid-area:green;
+}
+.blue {
+  background-color: blue;
+  grid-area:blue;
+}
+.yellow{
+    background-color: yellow;
+    grid-area:yellow;
+}
+
+
+/* .items{
+
+} */
